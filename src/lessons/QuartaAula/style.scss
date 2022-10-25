@@ -1,0 +1,40 @@
+.quarta-aula-component {
+
+    text-align: center;
+
+    * {
+        color: white;
+    }
+
+    .main-title {
+        padding: 12px;
+    }
+
+
+    .components-found {
+
+        display: flex;
+        flex-direction: row;
+        width: 852px;
+        margin: auto;
+        gap: 12px;
+        flex-wrap: wrap;
+
+        li {
+
+            width: 420px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            background-color: #303030;
+            padding: 12px;
+            border-radius: 12px;
+        }
+
+        img {
+            width: 400px;
+        }
+
+    }
+
+}

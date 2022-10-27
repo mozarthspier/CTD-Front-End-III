@@ -1,6 +1,7 @@
+import { QuintaAulaItem } from '../../components/QuintaAulaItem'
 import './style.scss'
 
-export function QuartaAula() {
+export function QuintaAula() {
 
     const nationalTeams = [
         {
@@ -37,21 +38,29 @@ export function QuartaAula() {
             name: "Qatar",
             nickname: "Al-Annabi (The Maroons)",
             association: "Qatar Football Association"
+        },
+        {
+            id: 6,
+            flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_Wales_%281959%29.svg/2560px-Flag_of_Wales_%281959%29.svg.png",
+            name: "País de Gales",
+            nickname: "Y Dreigiau (The Dragons)",
+            association: "Football Association of Wales"
+        },
+        {
+            id: 7,
+            flag: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png",
+            name: "Estados Unidos",
+            nickname: "The Stars and Stripes",
+            association: "United States Soccer Federation"
         }
     ]
 
     return (
-        <main className="quarta-aula-component">
+        <main className="quinta-aula-component">
             <h1 className="main-title">Seleções da Copa do Mundo</h1>
-
             <ul className="components-found">
                 {nationalTeams.map(team => (
-                    <li key={team.id}>
-                        <img src={team.flag}/>
-                        <h1>{team.name}</h1>
-                        <p><b>Nickname:</b> {team.nickname}</p>
-                        <p><b>Association:</b> {team.association}</p>
-                    </li>
+                    <QuintaAulaItem team={team}/>
                 ))}
             </ul>
         </main>

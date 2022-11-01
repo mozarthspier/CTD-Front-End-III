@@ -2,6 +2,7 @@ import { QuartaAula } from "./lessons/QuartaAula"
 import { QuintaAula } from "./lessons/QuintaAula"
 import { SegundaAula } from "./lessons/SegundaAula"
 import { SetimaAula } from "./lessons/SetimaAula"
+import { SetimaAulaAtividade } from "./lessons/SetimaAulaAtividade"
 import { TerceiraAula } from "./lessons/TerceiraAula"
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
         {/* <TerceiraAula /> */}
         {/* <QuartaAula /> */}
         {/* <QuintaAula /> */}
-        <SetimaAula />
+        {/* <SetimaAula /> */}
+        <SetimaAulaAtividade />
       </>
   )
 }

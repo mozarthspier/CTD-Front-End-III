@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.decima-terceira-aula-component {
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    color: white;
+    font-family: Poppins, sans-serif;
+
+    &>h1 {
+
+        margin-bottom: 32px;
+
+    }
+
+}
